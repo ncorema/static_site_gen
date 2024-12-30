@@ -15,7 +15,7 @@ class TestHTMLNode(unittest.TestCase):
     def test_repr(self):
         htmlnode1 = HTMLNode(tag="Huh?", value="huhhhh?", props={"href": "https://www.google.com", "target": "_blank",})
         test = repr(htmlnode1)
-        self.assertEqual(test, "HTMLNode(tag=Huh?, value=huhhhh?, children=None, props=dict_values(['https://www.google.com', '_blank']))")
+        self.assertEqual(test, "HTMLNode(tag=Huh?, value=huhhhh?, children=None, props={'href': 'https://www.google.com', 'target': '_blank'})")
 
     def test_empty(self):
         htmlnode1 = HTMLNode()
